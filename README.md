@@ -11,10 +11,10 @@ Arch's system Python. Install build tools normally; no global pip installation i
 
 ```fish
 sudo pacman -S --needed python python-pip python-setuptools
-cd /home/john/Documents/Repositories/projector-control
+cd /home/john/Documents/Repositories/theatre-control
 python -m venv --system-site-packages .venv
 .venv/bin/python -m pip install --no-build-isolation --no-deps .
-fish_add_path /home/john/Documents/Repositories/projector-control/.venv/bin
+fish_add_path /home/john/Documents/Repositories/theatre-control/.venv/bin
 projector --help
 ```
 
@@ -79,7 +79,7 @@ pages 37–40 and 112–113, for these settings and password restrictions.
 ## Unit tests (no projector required)
 
 ```fish
-cd /home/john/Documents/Repositories/projector-control
+cd /home/john/Documents/Repositories/theatre-control
 env PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
@@ -142,8 +142,8 @@ end
 In KDE System Settings, add a custom command shortcut with an absolute path:
 
 ```text
-/home/john/Documents/Repositories/projector-control/.venv/bin/projector on
-/home/john/Documents/Repositories/projector-control/.venv/bin/projector off
+/home/john/Documents/Repositories/theatre-control/.venv/bin/projector on
+/home/john/Documents/Repositories/theatre-control/.venv/bin/projector off
 ```
 
 Use separate shortcuts. KDE may not inherit Fish's PATH or session password
